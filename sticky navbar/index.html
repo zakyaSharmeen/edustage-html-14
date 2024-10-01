@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document-2</title>
+  </head>
+  <body>
+    <header>
+      <section class="navbar-section" id="navbar">
+        <div class="main-container">
+          <div class="navbar">
+            <div class="logo">
+              <img src="img/logo.png" alt="Logo" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div>
+      <section class="home-banner">
+        <div class="container">
+          <p class="tagline">BEST ONLINE EDUCATION SERVICE IN THE WORLD</p>
+          <h1 class="headline">ONE STEP AHEAD THIS SEASON</h1>
+          <div class="buttons">
+            <button class="btn learn-more">LEARN MORE</button>
+            <button class="btn see-course">SEE COURSE</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("scroll", () => {
+        const navbar = document.querySelector("header");
+
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
